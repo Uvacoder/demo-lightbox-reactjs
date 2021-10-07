@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 // Internal styles
 import "./App.scss";
 // External component libraries
@@ -87,7 +87,7 @@ const App = () => (
   <ViewportProvider>
     <SimpleReactLightbox>
       <AppComponent />
-      <div style={styles.container} role="container" aria-label="Primary">
+      <div style={styles.container} role="container" aria-label="section">
         <SRLWrapper>
           <GridList
             items={images}
@@ -103,6 +103,7 @@ const App = () => (
                   height={image.height}
                   aria-live="polite"
                   aria-atomic="true"
+                  alt=""
                 />
               );
             }}
