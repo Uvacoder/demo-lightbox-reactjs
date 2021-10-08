@@ -87,7 +87,7 @@ const App = () => (
   <ViewportProvider>
     <SimpleReactLightbox>
       <AppComponent />
-      <div style={styles.container} role="container" aria-label="section">
+      <div style={styles.container} role="button" aria-label="section">
         <SRLWrapper>
           <GridList
             items={images}
